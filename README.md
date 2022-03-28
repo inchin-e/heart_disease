@@ -1,20 +1,17 @@
-## Predicting the Sale Price of Bulldozers using Machine Learning
+## Predicting Heart Disease using Machine Learning
 
-### 1. Problem defition
-How well can we predict the future sale price of a bulldozer, given its characteristics and previous examples of how much similar bulldozers have been sold for?
+### 1. Problem Definition
+In our case, the problem we will be exploring is binary classification (a sample can only be one of two things).
+
+This is because we're going to be using a number of differnet features (pieces of information) about a person to predict whether they have heart disease or not.
 
 ### 2. Data
-The data is downloaded from the Kaggle Bluebook for Bulldozers competition: https://www.kaggle.com/c/bluebook-for-bulldozers/data
+The original data came from the Cleveland database from UCI Machine Learning Repository.
 
-### There are 3 main datasets:
+Howevever, we've downloaded it in a formatted way from Kaggle.
 
-- Train.csv is the training set, which contains data through the end of 2011.
-- Valid.csv is the validation set, which contains data from January 1, 2012 - April 30, 2012 You make predictions on this set throughout the majority of the competition. Your score on this set is used to create the public leaderboard.
-- Test.csv is the test set, which won't be released until the last week of the competition. It contains data from May 1, 2012 - November 2012. Your score on the test set determines your final rank for the competition.
+The original database contains 76 attributes, but here only 14 attributes will be used. Attributes (also called features) are the variables what we'll use to predict our target variable.
 
 ### 3. Evaluation
-The evaluation metric for this competition is the RMSLE (root mean squared log error) between the actual and predicted auction prices.
 
-For more on the evaluation of this project check: https://www.kaggle.com/c/bluebook-for-bulldozers/overview/evaluation
-
-### Note: The goal for most regression evaluation metrics is to minimize the error. For example, our goal for this project will be to build a machine learning model which minimises RMSLE.
+If we can reach 95% accuracy at predicting whether or not a patient has heart disease during the proof of concept, we'll pursure this project.
